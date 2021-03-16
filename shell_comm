@@ -1,0 +1,5 @@
+#!/bin/bash
+
+scp -r /files/to/send root@127.0.0.1:.../nextcloud_data/user/files/target_folder
+
+sudo -u www-data php /var/www/nextcloud/occ files:scan --all
